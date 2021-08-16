@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  gql:
+    build:
+      dockerfile: Dockerfile
+    networks:
+      - default
+    ports:
+      - "8082:8082"
+volumes:
+  data:
